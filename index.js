@@ -17,7 +17,7 @@ app.use("/api/test", require("./routes/emailRoutes"))
 
 app.use("*", (req, res) => {
     req.sendFile(path.join(__dirname, "dist", "index.html"))
-    res.status(404).json({ message: "Resource Not Found" })
+    // res.status(404).json({ message: "Resource Not Found" })
 })
 
 
